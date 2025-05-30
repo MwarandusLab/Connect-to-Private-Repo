@@ -21,4 +21,8 @@ If your system does not support ed25519, use RSA instead:
 - Passphrase: Optional. Leave empty for no prompt when pushing
 
 ## ✅ STEP 2: Add the SSH Key to the SSH Agent </br>
-On macOS / Linux:
+On macOS / Linux: </br>
+`` eval "$(ssh-agent -s)" `` </br>
+Then: </br>
+`` ssh-add ~/.ssh/id_ed25519 `` </br>
+On Windows (Git Bash): </br>
